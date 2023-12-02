@@ -1,0 +1,16 @@
+import {ADD_TO_CART,REMOVE_TO_CART} from "../constants";
+export const addToCart=(data)=>{
+    console.warn("data is ", data);
+    return {
+        type:ADD_TO_CART,
+        data:data
+    }
+}
+
+// FOR REMOVE TO CART
+export const removeToCart=(data)=>{
+    return {
+        type:REMOVE_TO_CART,
+        data:data
+    }
+}
